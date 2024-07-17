@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kode+Mono:wght@400..700&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    font-family: "Kode Mono", monospace;
+}
+
+.grid-background {
+    background-image:
+        linear-gradient(to right, rgba(255, 99, 216, 0.7) 2px, transparent 1.5px),
+        linear-gradient(to bottom, rgba(255, 99, 216, 0.7) 2px, transparent 1.5px);
+    background-size: 100px 100px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.titulo {
+    background-color: rgba(33, 239, 129, 0.747);
+    padding: 50px;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+
+h1,
+p {
+    margin: 0;
+    color: white;
+
+}
+
+.vidas {
+    background-color: #FF63D8;
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+.corazones {
+    margin-right: 5rem;
+}
+
+.premios {
+    margin-left: 5rem;    
+}
+
+
+.cajaPersonajes {
+    background-color: #8488F4;
+    text-align: center;
+    font-size: 35px;
+    margin: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 5%;
+}
+
+.cajaPersonajes h1 {
+    padding: 2rem;
+}
+
+.personajes {
+    display: flex;
+    justify-content: center;
+
+}
+
+.personajes img {
+    width: 30vh;
+    height: 50vh;
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+    filter: brightness(60%);
+}
+
+
+.personaje {
+    position: relative;
+
+}
+
+.personaje button {
+    font-family: "Kode Mono", monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FF63D8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.personaje button:hover,
+.personaje button:focus {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.personajes div {
+    padding: 5%;
+}
+
+.informacion {
+    margin-left: 20%;
+    text-align: justify;
+    width: 60%;
+    padding-bottom: 5rem;
+}
+
+.informacion p {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+
+}
